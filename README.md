@@ -1,68 +1,93 @@
 # QA Testing Platform
 
-A comprehensive web-based QA testing platform that connects clients with certified testers for various testing needs.
+A comprehensive platform for managing QA testing workflows, including test cases, test runs, and issue tracking.
 
-## Core Features
+## Features
 
-### User Types
-- **Admin**: Overall platform management, client onboarding, and tester management
-- **Testers**: Self-registered professionals who take certifications and perform testing tasks
-- **Clients**: Companies requiring testing services
-
-### Key Modules
-1. User Management Module
-2. Test Case Management Module
-3. Tester Certification Module
-4. Project Management Module
-5. Tester Allocation Module
-6. Test Execution Module
-7. Issue Management Module
-8. Rating & Compensation Module
-9. Reporting & Analytics Module
-10. Financial Management Module
+- User authentication and authorization
+- Test case management
+- Test run execution and reporting
+- Issue tracking
+- Client and project management
+- Payment tracking
+- Certification management
 
 ## Tech Stack
 
-- **Frontend**: React.js with Material-UI
-- **Backend**: Node.js with Express
-- **Database**: PostgreSQL
-- **Authentication**: Firebase Authentication
-- **Hosting**: Firebase
-- **API Documentation**: Swagger
-- **Testing**: Jest, React Testing Library
-- **State Management**: Redux Toolkit
-- **Form Handling**: Formik with Yup validation
+- Frontend:
+  - React
+  - Material-UI
+  - TypeScript
+  - React Router
 
-## Getting Started
+- Backend:
+  - Node.js
+  - Express
+  - TypeScript
+  - Sequelize ORM
+  - PostgreSQL
 
-1. Clone the repository
+## Setup Instructions
+
+1. Clone the repository:
+```bash
+git clone <repository-url>
+```
+
 2. Install dependencies:
-   ```bash
-   npm run install-all
-   ```
-3. Set up environment variables (see .env.example)
+```bash
+# Install client dependencies
+cd client
+npm install
+
+# Install server dependencies
+cd ../server
+npm install
+```
+
+3. Set up environment variables:
+Create `.env` files in both client and server directories with the necessary environment variables.
+
 4. Start the development servers:
-   ```bash
-   npm start
-   ```
+```bash
+# Start client development server
+cd client
+npm start
+
+# Start server development server
+cd ../server
+npm run dev
+```
 
 ## Project Structure
 
 ```
-qa-testing-platform/
-├── client/               # React frontend
-├── server/              # Node.js backend
-├── package.json         # Root package.json
-└── README.md           # Project documentation
+.
+├── client/                 # Frontend React application
+│   ├── src/
+│   │   ├── components/    # React components
+│   │   ├── layouts/       # Page layouts
+│   │   ├── pages/        # Page components
+│   │   └── services/     # API services
+│   └── package.json
+│
+└── server/                # Backend Node.js application
+    ├── src/
+    │   ├── config/       # Configuration files
+    │   ├── models/       # Database models
+    │   ├── routes/       # API routes
+    │   └── types/        # TypeScript type definitions
+    └── package.json
 ```
-
-## Environment Setup
-
-1. Create a Firebase project
-2. Set up PostgreSQL database
-3. Configure environment variables
-4. Set up Firebase hosting
 
 ## Contributing
 
-Please read CONTRIBUTING.md for details on our code of conduct and the process for submitting pull requests. 
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details. 
