@@ -90,4 +90,4 @@ npm run dev
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details. 
+This project is fully owned and copyrighted by Sang Brian - please reach out ot him for any licensing
